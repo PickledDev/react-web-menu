@@ -30,7 +30,7 @@ export default class Choices extends Component {
     const breakfastThing = Object.keys(BREAKFAST).map((item) => {
       return (
         <ListGroup key={item}>
-          <ListGroupItem className={styles['list-group-item']}>
+          <ListGroupItem className={styles.listGroupItem}>
             <Row>
               <Col>{item}</Col>
               <Col>({BREAKFAST[item]})</Col>
@@ -43,7 +43,7 @@ export default class Choices extends Component {
     const lunchThing = Object.keys(LUNCH).map((item) => {
       return (
         <ListGroup key={item}>
-          <ListGroupItem className={styles['list-group-item']}>
+          <ListGroupItem className={styles.listGroupItem}>
             <Row>
               <Col>{item}</Col>
               <Col>({LUNCH[item]})</Col>
@@ -56,7 +56,7 @@ export default class Choices extends Component {
     const dinnerThing = Object.keys(DINNER).map((item) => {
       return (
         <ListGroup key={item}>
-          <ListGroupItem className={styles['list-group-item']}>
+          <ListGroupItem className={styles.listGroupItem}>
             <Row>
               <Col>{item}</Col>
               <Col>({DINNER[item]})</Col>
@@ -69,7 +69,7 @@ export default class Choices extends Component {
     const desertThing = Object.keys(DESERT).map((item) => {
       return (
         <ListGroup key={item}>
-          <ListGroupItem className={styles['list-group-item']}>
+          <ListGroupItem className={styles.listGroupItem}>
             <Row>
               <Col>{item}</Col>
               <Col>({DESERT[item]})</Col>
@@ -81,14 +81,14 @@ export default class Choices extends Component {
 
     return (
       <Fragment>
-        <Card className={styles['card-style']}>
-          <Card.Header className={styles['card-header']}>Breakfast</Card.Header>
+        <Card className={styles.cardStyle}>
+          <Card.Header className={styles.cardHeader}>Breakfast</Card.Header>
           {breakfastThing}
-          <Card.Header className={styles['card-header']}>Lunch</Card.Header>
+          <Card.Header className={styles.cardHeader}>Lunch</Card.Header>
           {lunchThing}
-          <Card.Header className={styles['card-header']}>Dinner</Card.Header>
+          <Card.Header className={styles.cardHeader}>Dinner</Card.Header>
           {dinnerThing}
-          <Card.Header className={styles['card-header']}>Desert</Card.Header>
+          <Card.Header className={styles.cardHeader}>Desert</Card.Header>
           {desertThing}
         </Card>
       </Fragment>

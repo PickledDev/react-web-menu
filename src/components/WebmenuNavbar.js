@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, NavLink, NavbarBrand} from 'react-bootstrap'
+import {Button, Navbar, NavbarBrand} from 'react-bootstrap'
 
 import styles from './WebmenuNavBar.module.css'
 
@@ -7,14 +7,14 @@ const WebmenuNavbar = () => {
   return (
     <section>
       <Navbar className={styles.navbarStyle}>
-        <NavbarBrand>Web-Menu</NavbarBrand>
-        <NavLink className={styles.linkStyle}>Home</NavLink>
-        <NavLink className={styles.linkStyle}>Breakfast</NavLink>
-        <NavLink className={styles.linkStyle}>Lunch</NavLink>
-        <NavLink className={styles.linkStyle}>Dinner</NavLink>
-        <NavLink className={styles.linkStyle}>Desert</NavLink>
-        <NavLink className={styles.linkStyle}>Restaraunt</NavLink>
-        <NavLink className={styles.linkStyle}>Inventory</NavLink>
+        <NavbarBrand className={styles.brandStyle}>Web-Menu</NavbarBrand>
+        <Button className={styles.buttonStyle}>Home</Button>
+        <Button className={styles.buttonStyle}>Breakfast</Button>
+        <Button className={styles.buttonStyle}>Lunch</Button>
+        <Button className={styles.buttonStyle}>Dinner</Button>
+        <Button className={styles.buttonStyle}>Desert</Button>
+        <Button className={styles.buttonStyle}>Restaraunt</Button>
+        <Button className={styles.buttonStyle}>Inventory</Button>
       </Navbar>
     </section>
   )
