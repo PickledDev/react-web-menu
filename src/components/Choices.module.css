@@ -1,0 +1,12 @@
+.card-header {
+  background-color: #0A1931;
+  color: #fff;
+}
+
+.card-style {
+  width: 250px;
+}
+
+.list-group-item {
+  font-size: 80%;
+}
